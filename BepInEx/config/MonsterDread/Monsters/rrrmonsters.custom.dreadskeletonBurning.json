@@ -1,0 +1,265 @@
+{
+   "sOriginalPrefabName" : "SkeletonWarriorFire",
+   "sNewPrefabName" : "dreadskeletonBurning",
+   "Category_Appearance" : {
+      "vScale" : {
+         "fX" : 1.1,
+         "fY" : 1.1,
+         "fZ" : 1.1
+      },
+      "cTintColor" : null,
+      "cTintItems" : null,
+      "cBodySmoke" : null,
+      "cBodyFlames" : null
+   },
+   "Category_Character" : {
+      "sName" : "Skeleton Burning",
+      "sFaction" : "Undead",
+      "bBoss" : false,
+      "sBossEvent" : "",
+      "sDefeatSetGlobalKey" : "",
+      "fMoveSpeedMulti" : 1,
+      "bToleratesWater" : true,
+      "bToleratesFire" : false,
+      "bToleratesSmoke" : true,
+      "fHealth" : 1000,
+      "dDamageTaken" : {
+         "m_blunt" : "Resistant",
+         "m_slash" : "Resistant",
+         "m_pierce" : "Resistant",
+         "m_chop" : "Ignore",
+         "m_pickaxe" : "Ignore",
+         "m_fire" : "Immune",
+         "m_frost" : "Weak",
+         "m_lightning" : "Weak",
+         "m_poison" : "Resistant",
+         "m_spirit" : "Weak"
+      }
+   },
+   "Category_Humanoid" : {
+      "dtAttackDamageOverride" : null,
+      "fAttackDamageTotalOverride" : null,
+      "sAttackProjectileOverride" : null,
+      "aDefaultItems" : [
+         
+      ],
+      "aRandomWeapon" : [
+         
+      ],
+      "aRandomArmor" : [
+         
+      ],
+      "aRandomShield" : [
+         
+      ],
+      "aaRandomSets" : [
+         {
+            "aSetItems" : [
+                "@1",
+                "@2",
+                "@3",
+                "@4",
+                "ArmorMistlandsChest",
+                "ArmorMistlandsLegs",
+                "CapeLox"
+			   
+            ]
+         }       
+      ],	  
+      "aAdvancedCustomAttacks" :[
+         {
+            "sOriginalPrefabName":"CoreMaceHTD",
+            "sTargetAnim":"",
+            "fAIAttackInterval":3,
+            "bAIPrioritized":true,
+            "dtAttackDamageOverride":{
+               "fDamage":0,
+               "fBlunt":90,
+               "fSlash":0,
+               "fPierce":0,
+               "fChop":0,
+               "fPickaxe":0,
+               "fFire":40,
+               "fFrost":0,
+               "fLightning":0,
+               "fPoison":0,
+               "fSpirit":0
+            },
+            "fAttackDamageTotalOverride":null,
+            "sAttackProjectileOverride":null,
+            "aStartEffects":["sfx_skeleton_attack","sfx_club_swing"],
+            "aHitEffects":["sfx_club_hit"],
+            "aTriggerEffects":null,
+         },
+         {
+            "sOriginalPrefabName":"CoreGreatMaceHTD",
+            "sTargetAnim":"",
+            "fAIAttackInterval":3,
+            "bAIPrioritized":true,
+            "dtAttackDamageOverride":{
+               "fDamage":0,
+               "fBlunt":90,
+               "fSlash":0,
+               "fPierce":0,
+               "fChop":0,
+               "fPickaxe":0,
+               "fFire":40,
+               "fFrost":0,
+               "fLightning":0,
+               "fPoison":0,
+               "fSpirit":0
+            },
+            "fAttackDamageTotalOverride":null,
+            "sAttackProjectileOverride":null,
+            "aStartEffects":["sfx_skeleton_attack","sfx_club_swing"],
+            "aHitEffects":["sfx_club_hit"],
+            "aTriggerEffects":null,
+         },
+         {
+            "sOriginalPrefabName":"Spell_BreathFire_Jaw_DoD",
+            "sTargetAnim":"kick",
+            "fAIAttackInterval":15,
+            "bAIPrioritized":null,
+            "dtAttackDamageOverride":{
+               "fDamage":0,
+               "fBlunt":30,
+               "fSlash":0,
+               "fPierce":0,
+               "fChop":8,
+               "fPickaxe":8,
+               "fFire":30,
+               "fFrost":0,
+               "fLightning":0,
+               "fPoison":0,
+               "fSpirit":0
+            },
+            "fAttackDamageTotalOverride":null,
+            "sAttackProjectileOverride":null,
+            "aStartEffects":["sfx_sword_swing","SFX_RoarMonster05_DoD","VFX_Explosion_Fire1_DoD"],
+            "aHitEffects":["sfx_unarmed_hit"],
+            "aTriggerEffects":null,
+         },
+	 {
+            "sOriginalPrefabName":"GoblinShaman_attack_fireball",
+            "sTargetAnim":"cast1",
+            "fAIAttackInterval":10,
+            "bAIPrioritized":null,
+            "dtAttackDamageOverride":{
+               "fDamage":0,
+               "fBlunt":90,
+               "fSlash":0,
+               "fPierce":0,
+               "fChop":30,
+               "fPickaxe":30,
+               "fFire":90,
+               "fFrost":0,
+               "fLightning":0,
+               "fPoison":0,
+               "fSpirit":0
+            },
+            "fAttackDamageTotalOverride":null,
+            "sAttackProjectileOverride":null,
+            "aStartEffects":["sfx_sword_swing","SFX_RoarMonster04_DoD","VFX_Explosion_Fire2_DoD"],
+            "aHitEffects":null,
+            "aTriggerEffects":null
+         }
+      ]
+   },
+   "Category_BaseAI" : {
+      "fViewRange" : 30,
+      "fViewAngle" : 90,
+      "fHearRange" : 9999,
+      "sPathAgentType" : "HumanoidNoSwim",
+      "fRandomCircleInterval" : 2,
+      "fRandomMoveInterval" : 20,
+      "fRandomMoveRange" : 10,
+      "bAvoidFire" : false,
+      "bAfraidOfFire" : false,
+      "bAvoidWater" : true,
+      "sSpawnMessage" : "You will burn with those insignificant Furlings.",
+      "sDeathMessage" : ""
+   },
+   "Category_MonsterAI" : {
+      "fAlertRange" : 20,
+      "bFleeIfHurtWhenTargetCantBeReached" : true,
+      "bFleeIfNotAlerted" : false,
+      "fFleeIfLowHealth" : 0,
+      "bCirculateWhileCharging" : false,
+      "bCirculateWhileChargingFlying" : false,
+      "bEnableHuntPlayer" : false,
+      "bAttackPlayerObjects" : true,
+      "bAttackPlayerObjectsWhenAlerted" : true,
+      "fInterceptTimeMax" : 2,
+      "fInterceptTimeMin" : 0,
+      "fMaxChaseDistance" : 0,
+      "fMinAttackInterval" : 0,
+      "fCircleTargetInterval" : 0,
+      "fCircleTargetDuration" : 2,
+      "fCircleTargetDistance" : 4,
+      "aConsumeItems" : [
+         
+      ],
+      "fConsumeRange" : 2,
+      "fConsumeSearchRange" : 5,
+      "fConsumeSearchInterval" : 10,
+      "fConsumeHeal" : 0
+   },
+   "Category_CharacterDrop" : {
+      "bReplaceOriginalDrops" : true,
+      "drDrops" : [
+         {
+            "sPrefabName" : "TrophySkeleton",
+            "iAmountMin" : 1,
+            "iAmountMax" : 1,
+            "fChance" : 0.3,
+            "bOnePerPlayer" : false,
+            "bLevelMultiplier" : false
+         },
+         {
+            "sPrefabName" : "BlackMetalScrap",
+            "iAmountMin" : 3,
+            "iAmountMax" : 5,
+            "fChance" : 0.5,
+            "bOnePerPlayer" : false,
+            "bLevelMultiplier" : true
+         },
+         {
+            "sPrefabName" : "Needle",
+            "iAmountMin" : 3,
+            "iAmountMax" : 5,
+            "fChance" : 0.5,
+            "bOnePerPlayer" : false,
+            "bLevelMultiplier" : true
+         },
+         {
+            "sPrefabName" : "Coins",
+            "iAmountMin" : 30,
+            "iAmountMax" : 40,
+            "fChance" : 0.5,
+            "bOnePerPlayer" : false,
+            "bLevelMultiplier" : true
+         },
+         {
+            "sPrefabName" : "CoreGreatMaceHTD",
+            "iAmountMin" : 1,
+            "iAmountMax" : 1,
+            "fChance" : 0.2,
+            "bOnePerPlayer" : false,
+            "bLevelMultiplier" : true
+         }
+      ]
+   },
+   "Category_Special" : {
+      "bCanTame" : false,
+      "bAlwaysTame" : false,
+      "bCommandableWhenTame" : false,
+      "bCanProcreateWhenTame" : false,
+      "bFxNoTame" : false,
+      "bSfxNoAlert" : false,
+      "bSfxNoIdle" : false,
+      "bSfxNoHit" : false,
+      "bSfxNoDeath" : false
+   },
+   "Category_NpcOnly" : null,
+   "sConfigFormatVersion" : "0.2.0"
+}
